@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Formula 1</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Formula 1</title>
 </head>
 <body>
       <header>
             <div class="container">
                   <div class="logo">
-                        <img src="Slike/f1-logo.svg" alt="F1 Logo">
+                        <a href="index.html"><img src="Slike/f1-logo.svg" alt="F1 Logo"></a>
                   </div>
                   <nav>
                         <ul>
@@ -24,6 +24,23 @@
             </div>
       </header>
       <div class="news">
+
+            <div class="image-container">
+                  <div class="image">
+                        <img src="Slike/vest2.jpg" alt="Image 1">
+                  </div>
+                  <div class="image">
+                        <img src="Slike/vest4.jpg" alt="Image 2">
+                  </div>
+            </div>
+            
+            <div class="view-more">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                  <button class="arrow" onclick="viewmore()" id="myBtn"></button>
+            </div>
+      </div>
+          
+            <div class="news">
             <h1>Novosti</h1>
             <hr>
             <section class="news-section">
@@ -36,7 +53,7 @@
                   <img src="Slike/vest2.jpg" alt="Vest 4">
                   <p>F1 NATION: Verstappen ostvaruje veliku pobedu dok Leclerc propušta priliku - to je naša recenzija Velike nagrade Las Vegasa.</p>
             </div>
-                  <div class="news-card" onclick="openPopup('News 3', 'Haas je objavio sastav svojih vozača za jednodnevno testiranje nakon sezone na stazi Yas Marina u Abu Dabiju 28. novembra - sa zvezdom Formule 2 Oliverom Bearmanom i dugogodišnjim rezervnim vozačem tima Pietrom Fittipaldijem koji će voziti na testovima guma i testovima mladih vozača. Fittipaldi je vozio za Haas dva puta tokom sezone 2020. umesto povređenog Romaina Grosjeana, dok je član Ferrarijeve vozačke akademije Bearman impresionirao tim svojim nedavnim debijem u slobodnim treninzima u Meksiku - pri čemu je Ayao Kamatsu, direktor inženjeringa Haasa, komentarisao: Mislim da mu se ne može ništa zameriti.', 'Stvarno se dobro snašao. Bearman će imati dva izlaska u bolidu Haas VF-23 u Abu Dabiju, pri čemu će drugi nastup u slobodnim treninzima biti ovog petka, pre testa nakon sezone u utorak. Britanac će takođe imati na umu Formulu 2, jer se prvenstvo odlučuje ovog vikenda u Abu Dabiju - F2 debitant Bearman trenutno zauzima šesto mesto na tabeli. Radujem se Young Driver Testu sa MoneyGram Haas F1 timom u Abu Dabiju, rekao je Bearman. Radimo FP1 zajedno u petak, pa će biti sjajno moći nadograditi to i provesti pun dan u bolidu. Young Driver Test je poslednja prilika koju će tim imati ove godine da radi na stvarima za 2024. godinu, i trudiću se da obavim solidan posao. Tim me je učinio veoma prijatnim od trenutka kada smo se sreli u Kataru, i zaista uživam u radu s njima. Radujem se što ću videti sve u Abu Dabiju.', 'Slike/vest3.webp')">
+                  <div class="news-card" onclick="openPopup('Bearman i Fittipaldi će voziti za tim Haas na testiranju u Abu Dabiju nakon završetka sezone.', 'Haas je objavio sastav svojih vozača za jednodnevno testiranje nakon sezone na stazi Yas Marina u Abu Dabiju 28. novembra - sa zvezdom Formule 2 Oliverom Bearmanom i dugogodišnjim rezervnim vozačem tima Pietrom Fittipaldijem koji će voziti na testovima guma i testovima mladih vozača. Fittipaldi je vozio za Haas dva puta tokom sezone 2020. umesto povređenog Romaina Grosjeana, dok je član Ferrarijeve vozačke akademije Bearman impresionirao tim svojim nedavnim debijem u slobodnim treninzima u Meksiku - pri čemu je Ayao Kamatsu, direktor inženjeringa Haasa, komentarisao: Mislim da mu se ne može ništa zameriti.', 'Stvarno se dobro snašao. Bearman će imati dva izlaska u bolidu Haas VF-23 u Abu Dabiju, pri čemu će drugi nastup u slobodnim treninzima biti ovog petka, pre testa nakon sezone u utorak. Britanac će takođe imati na umu Formulu 2, jer se prvenstvo odlučuje ovog vikenda u Abu Dabiju - F2 debitant Bearman trenutno zauzima šesto mesto na tabeli. Radujem se Young Driver Testu sa MoneyGram Haas F1 timom u Abu Dabiju, rekao je Bearman. Radimo FP1 zajedno u petak, pa će biti sjajno moći nadograditi to i provesti pun dan u bolidu. Young Driver Test je poslednja prilika koju će tim imati ove godine da radi na stvarima za 2024. godinu, i trudiću se da obavim solidan posao. Tim me je učinio veoma prijatnim od trenutka kada smo se sreli u Kataru, i zaista uživam u radu s njima. Radujem se što ću videti sve u Abu Dabiju.', 'Slike/vest3.webp')">
             <img src="Slike/vest3.webp" alt="Vest 3">
             <p>Bearman i Fittipaldi će voziti za tim Haas na testiranju u Abu Dabiju nakon završetka sezone.</p>
             </div>
@@ -47,13 +64,16 @@
             </section>
       </div>
       <div class="popup" id="popup">
-            <div class="popup-content">
-                  <span class="close" onclick="closePopup()">&times;</span>
-                  <h2 id="popup-title"></h2>
-                  <img id="popup-image" src="" alt="Vest slika">
+            <div class="popup-content-container">
+                  <div class="popup-content">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <h2 id="popup-title"></h2>
+                        <img id="popup-image" src="" alt="News Image">
                   <div id="popup-content"></div>
+                  </div>
             </div>
       </div>
+      
       <script src="scripts.js"></script>
 </body>
 </html>
