@@ -4,7 +4,8 @@ body {
 }
 
 header {
-    background-color: #dc1c28;
+    background: rgb(54,0,2);
+    background: linear-gradient(90deg, rgba(54,0,2,1) 0%, rgba(130,2,2,1) 50%, rgba(255,0,0,1) 100%);
     padding: 10px 0;
 }
 .container {
@@ -15,6 +16,7 @@ header {
     margin-left: 15vw; 
     margin-right: 15vw; 
 }
+
 
 .logo img {
     height: 3vw;
@@ -38,6 +40,23 @@ nav a {
     border-radius: 5px;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 .f1 {
     margin: 5vw;
     border: 10px solid red;
@@ -204,27 +223,37 @@ nav a:hover {
 
 .image-container {
     display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(40vw, 1fr));
+    grid-template-columns:repeat(auto-fill, minmax(30vw, 1fr));
     gap: 1.5vw;
     margin: 2vw;
     }
 
-    .image {
+.image {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        overflow: hidden;
+        width: 95%;
+        border-radius: 2vw;
+    }
+    .image:hover{
+        transform: scale(1.1);
+    }
+    .image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 2vw;
+        aspect-ratio: 16/9;
+    }
+    
+    .image iframe{
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
         overflow: hidden;
         width: 100%;
         border-radius: 2vw;
+        aspect-ratio: 16/9;
     }
-.image:hover{
-    transform: scale(1.1);
-}
-    .image img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
     .view-more {
       text-align: center;
       margin-top: 20px;
@@ -238,7 +267,7 @@ nav a:hover {
       border: solid black;
       border-width: 0 3px 3px 0;
       display: inline-block;
-      transform: rotate(45deg);
+      rotate: 45deg;
       transition: transform 0.3s ease;
       vertical-align: middle;
       margin-bottom: 2vw;
@@ -249,10 +278,29 @@ nav a:hover {
     }
 
     .view-more:hover .arrow {
-      transform: rotate(225deg);
-    background: rgba(0, 0, 0, 0.5);
+        animation: rotateAnimation 4s linear infinite;
     cursor: pointer;
-
     }
+      @keyframes rotateAnimation {
+        0% {
+          transform: translateY(180deg);
+        }
+        25% {
+          transform: translateY(-50%) rotate(90deg);
+        }
+        50% {
+          transform: translateY(-100%) rotate(180deg);
+        }
+        75% {
+          transform: translateY(-100%) rotate(270deg);
+        }
+        100% {
+          transform: translateY(0) rotate(360deg);
+        }
+      }
+      
+      .rotating-element p {
+        margin: 0;
+      }
 
 #more {display: none;}

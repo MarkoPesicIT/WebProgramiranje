@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <title>Formula 1</title>
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <title>Formula 1</title>
+            <script src="scripts.js"></script>
 </head>
 <body>
       <header>
@@ -14,8 +15,8 @@
                   </div>
                   <nav>
                         <ul>
-                              <li><a href="#home">Početna</a></li>
-                              <li><a href="#schedule">Raspored</a></li>
+                              <li><a href="#index.html">Početna</a></li>
+                              <li><a href="raspored.html">Raspored</a></li>
                               <li><a href="#drivers">Vozači</a></li>
                               <li><a href="#teams">Timovi</a></li>
                               <li><a href="#teams">O meni</a></li>
@@ -24,22 +25,22 @@
             </div>
       </header>
       <div class="news">
-
+            <h1>Sta je Formula 1?</h1>
+            <hr>
             <div class="image-container">
                   <div class="image">
-                        <img src="Slike/vest2.jpg" alt="Image 1">
+                        <iframe src="https://www.youtube.com/embed/K5xPxs3cBP0?si=NHR66J4g_1EfTWJp"></iframe>
                   </div>
                   <div class="image">
                         <img src="Slike/vest4.jpg" alt="Image 2">
                   </div>
             </div>
-            
             <div class="view-more">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
                   <button class="arrow" onclick="viewmore()" id="myBtn"></button>
             </div>
       </div>
-          
+      
             <div class="news">
             <h1>Novosti</h1>
             <hr>
@@ -74,6 +75,5 @@
             </div>
       </div>
       
-      <script src="scripts.js"></script>
 </body>
 </html>
