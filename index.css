@@ -1,0 +1,174 @@
+
+.f1 {
+    margin: 5vw;
+    border: 10px solid red;
+    border-radius: 5vw;
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+
+.f1 hr {
+    border-width: 4px;
+    width: 95%;
+    margin: 20px auto; 
+    border-color: red;
+    border-radius: 5px;
+}
+
+
+.f1 h1 {
+    text-align: center;
+    font-size: 3vw;
+}
+.ytvideo-container {
+    display: flex;
+    margin: 5vw;
+    justify-content: space-evenly;
+}
+
+.novosti {
+    margin: 5vw;
+    border: 10px solid red;
+    border-radius: 5vw;
+    box-sizing: border-box; 
+    overflow: hidden; 
+}
+
+.novosti hr {
+    border-width: 4px;
+    width: 95%;
+    margin: 20px auto; 
+    border-color: red;
+    border-radius: 5px;
+}
+
+
+.novosti h1 {
+    text-align: center;
+    font-size: 2vw;
+}
+
+.novosti-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    gap: 1.5vw;
+    margin: 2vw;
+}
+
+.novosti-card p{
+    font-weight:bolder;
+    font-size: 1.5vw;
+}
+.novosti-card {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+}
+
+.novosti-card img {
+    border-radius: 2vw;
+    width: 100%;
+    height: auto;
+}
+
+.novosti-card:hover {
+    transform: scale(1.1);
+}
+
+.novosti-card:hover p{
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 2vw;
+    padding: 1vw;
+}
+
+.Formula1{
+    margin: 5vw;
+    border: 10px solid red;
+    border-radius: 5vw;
+    box-sizing: border-box; 
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.Formula1 hr{
+    border-width: 4px;
+    width: 95%;
+    margin: 20px auto; 
+    border-color: red;
+    border-radius: 5px;
+}
+
+.Formula1 h1{
+        text-align: center;
+    font-size: 3vw;
+}
+
+.Formula1 p{
+    padding: 2.5vw;
+    text-align: left;
+}
+.image-container {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(30vw, 1fr));
+    gap: 1.5vw;
+    margin: 2vw;
+    }
+
+.image {
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        overflow: hidden;
+        width: 95%;
+        border-radius: 2vw;
+    }
+    .image:hover{
+        transform: scale(1.1);
+    }
+    .image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 2vw;
+        aspect-ratio: 16/9;
+    }
+    
+    .image iframe{
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 2vw;
+        aspect-ratio: 16/9;
+    }
+    .view-more {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 2vw;
+    }
+
+    .arrow {
+      width: 30px;
+      height: 30px;
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      rotate: 45deg;
+      transition: transform 0.3s ease;
+      vertical-align: middle;
+      margin-bottom: 2vw;
+    }
+
+    .arrow-container {
+      display: inline-block;
+    }
+
+    .view-more:hover .arrow {
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+    .rotating-element p {
+        margin: 0;
+      }
+    #more {
+        display: none;
+    }

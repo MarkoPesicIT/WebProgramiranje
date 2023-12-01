@@ -1,315 +1,55 @@
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
 }
 
 header {
-    position: sticky;
-    background: rgb(54,0,2);
-    background: linear-gradient(90deg, rgba(54,0,2,1) 0%, rgba(130,2,2,1) 50%, rgba(255,0,0,1) 100%);
-    padding: 10px 0;
+      position: sticky;
+      background: rgb(54,0,2);
+      background: linear-gradient(90deg, rgba(54,0,2,1) 0%, rgba(130,2,2,1) 50%, rgba(255,0,0,1) 100%);
+      padding: 10px 0;
 }
+
 .container {
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    max-width: 100%;
-    margin-left: 15vw; 
-    margin-right: 15vw; 
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+      max-width: 100%;
+      margin-left: 15vw; 
+      margin-right: 15vw; 
 }
-
 .navbar {
-    display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    max-width: 100%;
-    margin-left: 15vw; 
-    margin-right: 15vw;
-  }
-
-
+      display: flex;
+      justify-content:space-evenly;
+      align-items: center;
+      max-width: 100%;
+      margin-left: 15vw; 
+      margin-right: 15vw;
+}
 .logo img {
-    height: 3vw;
+      height: 3vw;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+      list-style: none;
+      display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+      margin-right: 20px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.6vw;
-    transition: color 1s ease, 1s ease; 
-    padding: 10px;
-    border-radius: 5px;
-}
-.f1 {
-    margin: 5vw;
-    border: 10px solid red;
-    border-radius: 5vw;
-    box-sizing: border-box; 
-    overflow: hidden;
-}
-
-.f1 hr {
-    border-width: 4px;
-    width: 95%;
-    margin: 20px auto; 
-    border-color: red;
-    border-radius: 5px;
-}
-
-
-.f1 h1 {
-    text-align: center;
-    font-size: 3vw;
-}
-.ytvideo-container {
-    display: flex;
-    margin: 5vw;
-    justify-content: space-evenly;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.6vw;
+      transition: color 1s ease, 1s ease; 
+      padding: 10px;
+      border-radius: 5px;
 }
 
 nav a:hover {
-    color: #000;
-    background-color: white;
-    transition: color 1s ease, background-color 1s ease; 
-}
-.Formula1{
-    margin: 5vw;
-    border: 10px solid red;
-    border-radius: 5vw;
-    box-sizing: border-box; 
-    overflow: hidden; 
-}
-.Formula1 hr{
-    border-width: 4px;
-    width: 95%;
-    margin: 20px auto; 
-    border-color: red;
-    border-radius: 5px;
-}
-
-.Formula1 h1{
-        text-align: center;
-    font-size: 3vw;
-}
-
-.Formula1 p{
-    padding: 2.5vw;
-    text-align: left;
-}
-.news {
-    margin: 5vw;
-    border: 10px solid red;
-    border-radius: 5vw;
-    box-sizing: border-box; 
-    overflow: hidden; 
-}
-
-.news hr {
-    border-width: 4px;
-    width: 95%;
-    margin: 20px auto; 
-    border-color: red;
-    border-radius: 5px;
-}
-
-
-.news h1 {
-    text-align: center;
-    font-size: 2vw;
-}
-
-.news-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
-    gap: 1.5vw;
-    margin: 2vw;
-}
-
-.news-card p{
-    font-weight:bolder;
-    font-size: 1.5vw;
-}
-.news-card {
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    overflow: hidden;
-    width: 100%;
-}
-
-.news-card img {
-    border-radius: 2vw;
-    width: 100%;
-    height: auto;
-}
-
-.news-card:hover {
-    transform: scale(1.1);
-}
-
-.news-card:hover p{
-    background: rgba(0, 0, 0, 0.15);
-    border-radius: 2vw;
-    padding: 1vw;
-}
-
-
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    animation: expandIn 0.5s ease-in-out;
-}
-
-@keyframes expandIn {
-    from {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-
-.popup-content-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
-    border-radius: 1vw;
-}
-
-.popup-content {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    max-width: 80vw;
-    max-height: 80vh;
-    box-sizing: border-box;
-    overflow-y: auto;
-}
-
-.close {
-    position: absolute;
-    top: 0.9vw;
-    right: 1vw;
-    font-size: 2.5vw;
-    cursor: pointer;
-}
-
-.popup-content h2 {
-    font-size: 2vw;
-    margin-bottom: 10px;
-}
-
-.popup-content img {
-    max-width: 100%;
-    border-radius: 2vw;
-    height: auto;
-}
-
-.popup-content p {
-    margin-bottom: 2vw;
-    font-size: 1.5vw;
-}
-
-
-.popup.closing {
-    animation: shrinkOut 0.5s ease-in-out;
-}
-
-@keyframes shrinkOut {
-    from {
-        transform: scale(1);
-        opacity: 1;
-    }
-    to {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-}
-
-.image-container {
-    display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(30vw, 1fr));
-    gap: 1.5vw;
-    margin: 2vw;
-    }
-
-.image {
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out;
-        overflow: hidden;
-        width: 95%;
-        border-radius: 2vw;
-    }
-    .image:hover{
-        transform: scale(1.1);
-    }
-    .image img {
-        width: 100%;
-        height: auto;
-        display: block;
-        border-radius: 2vw;
-        aspect-ratio: 16/9;
-    }
-    
-    .image iframe{
-        cursor: pointer;
-        transition: transform 0.3s ease-in-out;
-        overflow: hidden;
-        width: 100%;
-        border-radius: 2vw;
-        aspect-ratio: 16/9;
-    }
-    .view-more {
-      text-align: center;
-      margin-top: 20px;
-      font-size: 2vw;
-    }
-
-    .arrow {
-      width: 30px;
-      height: 30px;
-      border: solid black;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      rotate: 45deg;
-      transition: transform 0.3s ease;
-      vertical-align: middle;
-      margin-bottom: 2vw;
-    }
-
-    .arrow-container {
-      display: inline-block;
-    }
-
-    .view-more:hover .arrow {
-        transform: rotate(180deg);
-        cursor: pointer;
-    }
-      .rotating-element p {
-        margin: 0;
-      }
-    #myBtn:checked{
-        transform: translateY(50%);
-    }
-    #more {
-        transform: translateY(50%);
-        display: none;
-    }
+      color: #000;
+      background-color: white;
+      transition: color 1s ease, background-color 1s ease; 
+  }
